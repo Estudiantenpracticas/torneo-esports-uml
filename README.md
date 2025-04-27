@@ -26,10 +26,10 @@ Dos entidades: Equipo y Jugador.
 
 ## Diagramas UML 
 ### Diagrama de Casos de Uso 
-![Diagrama de casos de uso](diagramas/DiagramaDeUsos.jpg)
+![Diagrama de casos de uso](diagramas/diagramadeusos.jpg)
  
 ### Diagrama de Clases 
-![Diagrama de clases](diagramas/DiagramaDeClases.jpg)
+![Diagrama de clases](diagramas/diagramadeclases.jpg)
 
 ## Justificación del diseño
 Durante el planteamiento de los diagramas, se definieron los siguientes casos de uso:
