@@ -1,18 +1,28 @@
 # Sistema de Gestión de Torneos de eSports 
 
 ## Autor 
-Andrés Alberto Budiziszewski González 
+Ángela Carballo Santamaria
 
-AndresBudziszewski
+Estudiantenpracticas
 
 ## Descripción del Proyecto 
-La idea de este trabajo de la asignatura de Entornos de Desarollo es la creación de una aplicación de gestión de torneos de eSports.
- 
-EL objetivo de dicha tarea es afianzar conceptos de UML y del propio Paradigma de Orientación a objetos. En este repositorio he creado un diagrama de clases y uno de usos sobre la parte de Gestion de equipos y jugadores de la aplicación.
+Este proyecto forma parte de la asignatura Entornos de Desarrollo y tiene como objetivo la creación de una aplicación de gestión de torneos de eSports.
 
-Tras analizar el enunciado y de cara al diseño del diagrama de usos encontré 1 actor, el administrador, y 2 entidades, equipo y jugador.
+La tarea busca afianzar los conocimientos de UML y el paradigma de programación orientada a objetos. Para ello, se han diseñado:
 
-[](https://github.com/AndresBudziszewski/AD3_UML_Torneo_eSports.git)
+Un diagrama de clases.
+
+Un diagrama de casos de uso.
+
+Estos diagramas representan la parte de gestión de equipos y jugadores dentro de la aplicación.
+
+Tras analizar el enunciado, se identificaron:
+
+Un actor principal: el Administrador.
+
+Dos entidades: Equipo y Jugador.
+
+[](https://github.com/Estudiantenpracticas/torneo-esports-uml.git)
 
 ## Diagramas UML 
 ### Diagrama de Casos de Uso 
@@ -22,14 +32,40 @@ Tras analizar el enunciado y de cara al diseño del diagrama de usos encontré 1
 ![Diagrama de clases](diagramas/DiagramaDeClases.jpg)
 
 ## Justificación del diseño
+Durante el planteamiento de los diagramas, se definieron los siguientes casos de uso:
 
-Como mencionaba en la descripción, a la hora de plantear los diagramas encontré los siguientes casos: Registrar jugadores, añadir jugadores a un equipo, consultar lista de equipos y jugadores. El primer caso, el de registrar jugador no venía especificado en el enunciado pero decidí incluirlo ya que al igual que hay una opción de registrar equipos y de añadir jugadores a los equipos debería de existir un caso de registrar a los propios jugadores. Estos cuatro casos los considero independientes ya que no dependen entre si para poder realizarse, pero si que veo relación entre ellas.
+Registrar jugadores.
 
-Decidi incluir dos casos nuevos al esquema justamente por eso, y son: Comprobar si jugador está registrado y Comprobar si equipo esta registrado. Estos casos serían implementados tanto por los casos de registro como por el de añadir a equipo ya que así evitaríamos que se intente añadir un jugador o un equipo no registrado o que se intente registrar un jugador o un equipo que ya registrado.
+Añadir jugadores a un equipo.
 
-Tambien observé que entre los registros y el añadir jugadores hay una relacion de herencia ya que esto podría ser un método que los registros puedan heredar tal cual para utilizar, no algo que implementen y tengan que reescribir. 
+Consultar la lista de equipos.
 
-Como actor solo encontre la figura del administrador, no vi que ninguna otra figura calificara como actor.
+Consultar la lista de jugadores.
+
+Aunque el registro de jugadores no estaba explícitamente indicado en el enunciado, decidí incluirlo por coherencia: al igual que se permite registrar equipos y añadir jugadores a equipos, debería contemplarse también registrar a los propios jugadores.
+
+Además, propuse dos casos adicionales:
+
+Comprobar si un jugador está registrado.
+
+Comprobar si un equipo está registrado.
+
+Estos casos sirven para:
+
+Evitar registrar elementos ya existentes.
+
+Evitar añadir a equipos o jugadores que no existen en el sistema.
+
+También observé una relación de herencia entre los casos de registro y el de añadir jugadores a un equipo, ya que estos podrían compartir métodos comunes.
+
+Respecto a los actores, únicamente se identificó la figura del Administrador; no se encontraron otros roles relevantes para este sistema.
+
 
 ## Conclusiones  
-Este proyecto me ha servido para entender mucho mejor, no solo UML y su representación con los diagramas de uso y clases, si no también ha ver el propio paradigma de orientación a objetos de una manera mas gráfica. Además, cabría destacar que me ha sido útil para entender mucho mejor como organizar el codigo en distintas capas y las funciones que tiene cada parte de un proyecto.
+Este proyecto ha sido de gran utilidad para:
+
+Comprender mejor el uso de UML y la representación gráfica de los sistemas.
+
+Entender el paradigma de orientación a objetos de manera más visual y estructurada.
+
+Mejorar la organización del código en capas, entendiendo mejor el rol de cada componente dentro de un proyecto real.
